@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <group android:id="@+id/grp1">
+        <item android:id="@+id/mSalir"
+            android:title="VOLVER"
+            android:icon="@drawable/salir">
+        </item>
+    </group>
+    <group android:id="@+id/grp2">
+        <item android:id="@+id/mGrabar"
+            android:title="GRABAR"
+            android:icon="@drawable/pagar">
+        </item>
+    </group>
+</menu>

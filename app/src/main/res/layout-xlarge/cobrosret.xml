@@ -1,0 +1,402 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:id="@+id/principal"
+    android:layout_height="match_parent"
+    android:weightSum="1">
+
+    <android.support.design.widget.AppBarLayout android:layout_height="wrap_content"
+        android:layout_width="match_parent" android:theme="@style/AppTheme.AppBarOverlay"
+        android:id="@+id/appLayout">
+
+        <android.support.v7.widget.Toolbar android:id="@+id/toolbar1"
+            android:layout_width="match_parent" android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary" />
+
+    </android.support.design.widget.AppBarLayout>
+
+    <LinearLayout
+        android:id="@+id/layoutT"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@+id/appLayout">
+        <TextView
+            android:id="@+id/tvTit"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_weight="1.93"
+            android:gravity="center"
+            android:text="RETENCIONES - COBROS COJAPAN"
+            android:textSize="40dp"
+            android:textStyle="bold"
+            android:textColor="#0a2f92"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout1"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:layout_below="@+id/layoutT">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cliente: "
+            android:textSize="30dp"
+            android:textStyle="bold"
+            android:layout_weight="1.36"
+            android:id="@+id/lbl_cliente"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:layout_weight="5.10"
+            android:textSize="30dp"
+            android:textStyle="bold"
+            android:id="@+id/txt_cliente" />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/layout2"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:layout_below="@+id/layout1">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Base Imponible:"
+            android:id="@+id/lbl_valor_base"
+            android:textSize="30dp"
+            android:textStyle="bold"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:textSize="30dp"
+            android:textStyle="bold"
+            android:id="@+id/txt_base"
+            android:gravity="center" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Valor Iva:"
+            android:id="@+id/lbl_valor_abono"
+            android:textSize="30dp"
+            android:textStyle="bold"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:textSize="30dp"
+            android:textStyle="bold"
+            android:id="@+id/txt_iva"
+            android:gravity="center" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Total Ret.:"
+            android:id="@+id/lbl_total_abonado"
+            android:textSize="30dp"
+            android:textStyle="bold"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:textSize="30dp"
+            android:textStyle="bold"
+            android:id="@+id/txt_abonado"
+            android:gravity="center" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/layout2"
+        android:orientation="horizontal" />
+
+    <LinearLayout
+        android:id="@+id/layout4"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:layout_below="@+id/layout3">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="30dp"
+            android:textStyle="bold"
+            android:text="Ret.:"
+            android:layout_gravity="center_vertical"
+            android:id="@+id/txt_retencion" />
+        <Spinner
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.31"
+            android:textSize="30dp"
+            android:layout_gravity="center_vertical"
+            android:id="@+id/sp_retencion"
+            android:layout_marginRight="25dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0"
+            android:textSize="30dp"
+            android:textStyle="bold"
+            android:text="%Ret.:"
+            android:layout_gravity="center_vertical"
+            android:id="@+id/lbl_pret" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.70"
+            android:textSize="30dp"
+            android:textStyle="bold"
+            android:layout_gravity="center_vertical"
+            android:id="@+id/txt_pret"
+            android:gravity="center" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0"
+            android:textSize="30dp"
+            android:textStyle="bold"
+            android:text="Valor ret.:"
+            android:layout_gravity="center_vertical"
+            android:id="@+id/txt_abonar" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.50"
+            android:textSize="30dp"
+            android:textStyle="bold"
+            android:inputType="numberDecimal"
+            android:id="@+id/et_parcial"
+            android:textColorHint="@color/colorPrimaryDark"
+            android:maxLength="7"
+            android:layout_gravity="center_vertical"
+            android:gravity="center" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout6"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:layout_below="@+id/layout4"
+        android:weightSum="1">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="25dp"
+            android:textStyle="bold"
+            android:text="Estab.:"
+            android:layout_gravity="center_vertical"
+            android:id="@+id/txt_estab" />
+        <EditText
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:textSize="25dp"
+            android:layout_gravity="center_vertical"
+            android:inputType="number"
+            android:id="@+id/et_estab"
+            android:layout_marginRight="5dp"
+            android:textColorHint="@color/colorPrimaryDark"
+            android:maxLength="5"
+            android:gravity="center" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="25dp"
+            android:textStyle="bold"
+            android:text="Pto. Emision:"
+            android:layout_gravity="center_vertical"
+            android:id="@+id/txt_ptoemmi" />
+        <EditText
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:textSize="25dp"
+            android:layout_gravity="center_vertical"
+            android:inputType="number"
+            android:id="@+id/et_ptoemi"
+            android:layout_marginRight="5dp"
+            android:textColorHint="@color/colorPrimaryDark"
+            android:maxLength="5"
+            android:gravity="center" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="25dp"
+            android:textStyle="bold"
+            android:text="Secuencia:"
+            android:layout_gravity="center_vertical"
+            android:id="@+id/txt_secuencia" />
+        <EditText
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:textSize="25dp"
+            android:layout_gravity="center_vertical"
+            android:inputType="number"
+            android:textColorHint="@color/colorPrimaryDark"
+            android:id="@+id/et_secuencia"
+            android:maxLength="9"
+            android:gravity="center" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout7"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:layout_below="@+id/layout6"
+        android:weightSum="1">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="25dp"
+            android:textStyle="bold"
+            android:text="No. Autor.:"
+            android:layout_gravity="center_vertical"
+            android:id="@+id/txt_numauto" />
+        <EditText
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:textSize="18dp"
+            android:layout_gravity="center_vertical"
+            android:inputType="number"
+            android:textColorHint="@color/colorPrimaryDark"
+            android:id="@+id/et_numauto"
+            android:maxLength="10"
+            android:gravity="center"
+            android:layout_marginRight="5dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="25dp"
+            android:textStyle="bold"
+            android:text="Fecha RT:"
+            android:layout_gravity="center_vertical"
+            android:id="@+id/txt_fchrt"
+            android:layout_marginRight="5dp"/>
+        <DatePicker
+            android:layout_width="170dp"
+            android:layout_height="150dp"
+            android:background="#8cc0f0"
+            android:id="@+id/rt_fch"
+            android:datePickerMode="spinner"
+            android:calendarViewShown="false"
+            android:layout_weight="0.80"
+            android:spinnersShown="true" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout8"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="right"
+        android:layout_below="@+id/layout7"
+        android:layout_marginTop="10dp">
+
+        <Button
+            android:layout_width="140dp"
+            android:layout_height="35dp"
+            android:text="AGREGAR"
+            android:textSize="18dp"
+            android:id="@+id/btn_agregar"
+            android:gravity="center"
+            android:drawableRight="@drawable/add_button"
+            android:background="@drawable/button"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout9"
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:orientation="horizontal"
+        android:layout_alignParentRight="false"
+        android:layout_below="@+id/layout8" />
+
+    <LinearLayout
+        android:id="@+id/layout10"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@+id/layout9">
+        <TableLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            >
+
+            <TableRow android:layout_height="60dp"
+                android:background="#CCC">
+                <TextView android:text="X"
+                    android:layout_width="10dp"
+                    android:layout_column="0"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:textAppearance="?android:attr/textAppearanceLarge"/>
+                <TextView android:text=" Num. Ret."
+                    android:layout_width="75dp"
+                    android:layout_column="1"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:textAppearance="?android:attr/textAppearanceLarge"/>
+                <TextView android:text=" Cod. Ret."
+                    android:layout_width="35dp"
+                    android:layout_column="2"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:textAppearance="?android:attr/textAppearanceLarge"/>
+                <TextView android:text=" % Ret."
+                    android:layout_width="35dp"
+                    android:layout_column="3"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:textAppearance="?android:attr/textAppearanceLarge"/>
+                <TextView android:text="Fecha Ret."
+                    android:layout_width="60dp"
+                    android:layout_column="4"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:textAppearance="?android:attr/textAppearanceLarge"/>
+                <TextView android:text="Abono"
+                    android:layout_width="30dp"
+                    android:layout_column="5"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:textAppearance="?android:attr/textAppearanceLarge"/>
+            </TableRow>
+            <ListView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/lsv_lista_ret"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:headerDividersEnabled="true" />
+
+        </TableLayout>
+    </LinearLayout>
+
+</RelativeLayout>

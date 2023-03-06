@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/lay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="right"
+        android:weightSum="1">
+        <Button
+            android:id="@+id/btConf"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginRight="10dp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:text="CONFIG."
+            android:drawableTop="@drawable/conf"
+            android:background="@drawable/button"
+            android:layout_weight="0.05"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/la"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp">
+
+        <TextView
+            android:id="@+id/tvTitu1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.93"
+            android:gravity="center"
+            android:text="APP MOVIL COBROS - MARSELLA"
+            android:textSize="30dp"
+            android:textStyle="bold"
+            android:textColor="#0a2f92" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/la2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:weightSum="1"
+        android:layout_gravity="center"
+        android:gravity="center">
+        <TextView
+            android:id="@+id/tvCod"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="CODIGO"
+            android:textSize="30dp"
+            android:textStyle="bold"
+            android:textColor="#0a2f92" />
+        <EditText
+            android:id="@+id/etC"
+            android:layout_width="175dp"
+            android:layout_height="wrap_content"
+            android:textSize="40dp"
+            android:textColor="#0a2f92"
+            android:maxLength="5"
+            android:layout_gravity="center"
+            android:focusableInTouchMode="true"
+            android:focusable="true"
+            android:gravity="center"
+            android:textAlignment="center"
+            android:textStyle="bold"
+            android:enabled="true"
+            android:inputType="textCapCharacters"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/la3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:weightSum="1"
+        android:layout_gravity="center"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/tvPin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="PIN"
+            android:textSize="30dp"
+            android:textStyle="bold"
+            android:textColor="#0a2f92" />
+
+        <EditText
+            android:id="@+id/etN1"
+            android:layout_width="175dp"
+            android:layout_height="wrap_content"
+            android:textSize="50dp"
+            android:textColor="#0a2f92"
+            android:numeric="integer"
+            android:maxLength="4"
+            android:layout_gravity="center"
+            android:focusableInTouchMode="true"
+            android:focusable="true"
+            android:gravity="center"
+            android:textAlignment="center"
+            android:textStyle="bold"
+            android:enabled="true"
+            android:password="true" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout8"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal"
+        android:layout_below="@+id/la3"
+        android:weightSum="1"
+        android:gravity="center">
+        <Button
+            android:id="@+id/btEntrar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button"
+            android:text="INGRESAR"
+            android:textSize="30dp"
+            android:textStyle="bold"
+            android:textColor="#ffffff"
+            android:gravity="center"
+            android:layout_weight="0.10" />
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:src="@drawable/logom"
+        android:layout_gravity="center_horizontal" />
+
+    <TextView
+        android:id="@+id/txt_version"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|right"
+        android:layout_marginTop="40dp"
+        android:layout_marginRight="10dp"
+        android:gravity="bottom|right"
+        android:text=""
+        android:textSize="18dp"
+        android:textStyle="italic"
+        android:textColor="#0a2f92"/>
+
+
+</LinearLayout>

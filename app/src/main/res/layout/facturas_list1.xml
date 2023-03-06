@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <TableLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="#FFF">
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="60dp"
+            android:layout_marginTop="2dp">
+
+            <CheckBox
+            android:id="@+id/chk_fac"
+            android:layout_width="3dp"
+            android:layout_height="40dp"
+            android:layout_column="0"
+            android:layout_weight="1"
+            android:buttonTint="#1089e3"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <TextView
+                android:id="@+id/txt_cod_mov"
+                android:layout_width="10dp"
+                android:layout_height="40dp"
+                android:layout_column="1"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:textSize="16dp"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <TextView
+                android:id="@+id/txt_num_factura"
+                android:layout_width="35dp"
+                android:layout_height="40dp"
+                android:layout_column="2"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:textSize="11dp"
+
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <TextView
+                android:id="@+id/txt_fecha_emision"
+                android:layout_width="60dp"
+                android:layout_height="40dp"
+                android:layout_column="3"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:textSize="16dp"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <TextView
+                android:id="@+id/txt_status"
+                android:layout_width="5dp"
+                android:layout_height="40dp"
+                android:layout_column="4"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:textSize="16dp"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <TextView
+                android:id="@+id/txt_rel"
+                android:layout_width="30dp"
+                android:layout_height="40dp"
+                android:layout_column="5"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:textSize="16dp"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <TextView
+                android:id="@+id/txt_porc"
+                android:layout_width="15dp"
+                android:layout_height="40dp"
+                android:layout_column="6"
+                android:layout_weight="1"
+                android:gravity="right"
+                android:textSize="16dp"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <TextView
+                android:id="@+id/txt_valor_total"
+                android:layout_width="30dp"
+                android:layout_height="40dp"
+                android:layout_column="7"
+                android:layout_weight="1"
+                android:gravity="right"
+                android:textSize="16dp"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <TextView
+                android:id="@+id/txt_valor_saldo"
+                android:layout_width="30dp"
+                android:layout_height="40dp"
+                android:layout_column="8"
+                android:layout_weight="1"
+                android:gravity="right"
+                android:textSize="16dp"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <EditText
+                android:id="@+id/et_abono"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_column="9"
+                android:layout_weight="1"
+                android:inputType="numberDecimal"
+                android:gravity="right"
+                android:textSize="16dp"
+                android:textColorHint="@color/colorPrimaryDark"
+                android:maxLength="8"
+                android:descendantFocusability="afterDescendants"/>
+        </TableRow>
+
+    </TableLayout>
+
+</RelativeLayout>

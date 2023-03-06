@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">Marsella Cobros</string>
+
+    <string name="navigation_drawer_open">Abrir Menu</string>
+    <string name="navigation_drawer_close">Cerrar Menu</string>
+
+    <string name="action_settings">Configuraciones</string>
+
+    <string-array name="FormaPago">
+        <item>EF - EFECTIVO</item>
+        <item>CH - CHEQUE</item>
+        <item>DP - DEPOSITO</item>
+        <item>DC - DOCUMENTO</item>
+    </string-array>
+
+    <string-array name="TipoRecibo">
+        <item>RC - RECIBOS (TODOS)</item>
+        <item>RCE - RECIBOS (EFECTIVO)</item>
+        <item>RK - CHEQUES CANJE</item>
+        <item>RQ - CHEQUE PROTESTADOS</item>
+    </string-array>
+
+    <string-array name="TipoNotas">
+        <item>NG - NOTA CREDITO INTERNA</item>
+    </string-array>
+</resources>

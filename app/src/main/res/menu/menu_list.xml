@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:id="@+id/mRCobro"
+        android:title="Recibos de Cobros"></item>
+    <item android:id="@+id/mRChequeCanje"
+        android:title="Recibos en Garantia o Canje"></item>
+    <item android:id="@+id/mRChequeProtesta"
+        android:title="Recibos de Cheques Protestados"></item>
+    <item android:id="@+id/mRetenciones"
+        android:title="Retenciones"></item>
+    <item android:id="@+id/mNotaCredito"
+        android:title="Nota de Credito"></item>
+    <item android:id="@+id/mNotaCreditoInterna"
+        android:title="Nota de Credito Interna"></item>
+    <item android:id="@+id/mNotaCreditoInternaAPP"
+        android:title="Nota de Credito Interna APP"></item>
+</menu>

@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:id="@+id/principal"
+    android:layout_height="match_parent"
+    android:weightSum="1">
+
+    <android.support.design.widget.AppBarLayout android:layout_height="wrap_content"
+        android:layout_width="match_parent" android:theme="@style/AppTheme.AppBarOverlay"
+        android:id="@+id/appLayout">
+
+        <android.support.v7.widget.Toolbar android:id="@+id/toolbar1"
+            android:layout_width="match_parent" android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary" />
+
+    </android.support.design.widget.AppBarLayout>
+
+    <LinearLayout
+        android:id="@+id/layoutT"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@+id/appLayout">
+        <TextView
+            android:id="@+id/tvTit"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_weight="1.93"
+            android:gravity="center"
+            android:text=""
+            android:textSize="25dp"
+            android:textStyle="bold"
+            android:textColor="#0a2f92"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@+id/layoutT">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cliente: "
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:layout_weight="2"
+            android:id="@+id/lbl_cliente"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:layout_weight="2"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:id="@+id/txt_cliente" />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/layout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@+id/layout1">
+    <TextView
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text="Valor NC:"
+        android:id="@+id/lbl_valor"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+        <TextView
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:text="0.00"
+            android:gravity="right"
+            android:id="@+id/txt_valor" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@+id/layout2">
+        <TextView
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:text="Valor Selec.:"
+            android:id="@+id/lbl_valor_abono"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <TextView
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:text="0.00"
+            android:gravity="right"
+            android:id="@+id/txt_valor_abono" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout7"
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:orientation="horizontal"
+        android:layout_alignParentRight="false"
+        android:layout_below="@+id/layout3" />
+
+    <LinearLayout
+        android:id="@+id/layout8"
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:orientation="horizontal"
+        android:layout_alignParentRight="false"
+        android:layout_below="@+id/layout7" />
+
+    <LinearLayout
+        android:id="@+id/layout9"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@+id/layout8">
+
+        <TableLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+
+            <TableRow android:layout_height="50dp"
+                android:background="#CCC">
+                <TextView android:text="✔"
+                    android:layout_width="3dp"
+                    android:layout_column="0"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:textSize="14dp"
+                    android:textAppearance="?android:attr/textAppearanceMedium"/>
+                <TextView android:text="Doc"
+                    android:layout_width="10dp"
+                    android:layout_column="1"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:textSize="14dp"
+                    android:textAppearance="?android:attr/textAppearanceMedium"/>
+                <TextView android:text="Número"
+                    android:layout_width="35dp"
+                    android:layout_column="2"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:textSize="14dp"
+                    android:textAppearance="?android:attr/textAppearanceMedium"/>
+                <TextView android:text="Emision"
+                    android:layout_width="60dp"
+                    android:layout_column="3"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:textSize="14dp"
+                    android:textAppearance="?android:attr/textAppearanceMedium"/>
+                <TextView android:text="S"
+                    android:layout_width="5dp"
+                    android:layout_column="4"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:textSize="14dp"
+                    android:textAppearance="?android:attr/textAppearanceMedium"/>
+                <TextView android:text="Relac."
+                    android:layout_width="35dp"
+                    android:layout_column="5"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:textSize="14dp"
+                    android:textAppearance="?android:attr/textAppearanceMedium"/>
+                <TextView android:text="%"
+                    android:layout_width="15dp"
+                    android:layout_column="6"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:textSize="14dp"
+                    android:textAppearance="?android:attr/textAppearanceMedium"/>
+                <TextView android:text="Valor"
+                    android:layout_width="30dp"
+                    android:layout_column="7"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:textSize="14dp"
+                    android:textAppearance="?android:attr/textAppearanceMedium"/>
+                <TextView android:text="Saldo"
+                    android:layout_width="30dp"
+                    android:layout_column="8"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:textSize="14dp"
+                    android:textAppearance="?android:attr/textAppearanceMedium"/>
+                <TextView android:text="Abono"
+                    android:layout_width="40dp"
+                    android:layout_column="9"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:textSize="14dp"
+                    android:textAppearance="?android:attr/textAppearanceMedium"/>
+            </TableRow>
+            <ListView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/lsv_lista_facturas"
+                android:descendantFocusability="beforeDescendants"/>
+
+        </TableLayout>
+    </LinearLayout>
+</RelativeLayout>

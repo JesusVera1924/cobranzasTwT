@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <ImageView
+        android:id="@+id/icon"
+        android:layout_width="60dp"
+        android:layout_height="75dp"
+        android:icon="@drawable/ic_cli"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp" />
+    <TextView
+        android:id="@+id/ced_ruc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/icon"
+        android:paddingBottom="10dp"
+        android:paddingLeft="5dp"
+        android:textColor="#0b0278"
+        android:textSize="20dp"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/guion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/ced_ruc"
+        android:paddingBottom="10dp"
+        android:paddingLeft="5dp"
+        android:text="     COD. CLIENTE: "
+        android:textColor="#000000"
+        android:textSize="20dp"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/cod_cli"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/guion"
+        android:paddingLeft="10dp"
+        android:textColor="#000000"
+        android:textSize="20dp"
+        android:textStyle="bold"/>
+    <TextView
+        android:id="@+id/nomb1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/icon"
+        android:layout_below="@+id/cod_cli"
+        android:paddingTop="5dp"
+        android:paddingLeft="10dp"
+        android:textColor="#000000"
+        android:textSize="16dp"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/guion3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/nomb1"
+        android:layout_below="@+id/cod_cli"
+        android:paddingTop="5dp"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:text=" - "
+        android:textColor="#000000"
+        android:textSize="18dp"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/nomb2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/guion3"
+        android:layout_below="@+id/cod_cli"
+        android:paddingTop="5dp"
+        android:paddingLeft="10dp"
+        android:textColor="#000000"
+        android:textSize="16dp"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/provincia"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/icon"
+        android:layout_below="@+id/nomb1"
+        android:paddingLeft="10dp"
+        android:textColor="#000000"
+        android:textSize="16dp"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/guion1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/provincia"
+        android:layout_below="@+id/nomb1"
+        android:paddingTop="5dp"
+        android:paddingLeft="5dp"
+        android:text="   "
+        android:textColor="#000000"
+        android:textSize="18dp"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/ciudad"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/guion1"
+        android:layout_below="@+id/nomb1"
+        android:paddingLeft="10dp"
+        android:textColor="#000000"
+        android:textSize="16dp"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/guion2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/ciudad"
+        android:layout_below="@+id/nomb1"
+        android:paddingTop="5dp"
+        android:paddingLeft="5dp"
+        android:text="   "
+        android:textColor="#000000"
+        android:textSize="18dp"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/direccion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/guion2"
+        android:layout_below="@+id/nomb1"
+        android:paddingLeft="10dp"
+        android:textColor="#000000"
+        android:textSize="16dp"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/desc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/icon"
+        android:layout_below="@+id/provincia"
+        android:text="DESC.: "
+        android:paddingLeft="10dp"
+        android:textColor="#000000"
+        android:textSize="16dp"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/descuento"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/desc"
+        android:layout_below="@+id/provincia"
+        android:paddingLeft="10dp"
+        android:textColor="#000000"
+        android:textSize="16dp"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/guion4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/descuento"
+        android:layout_below="@+id/provincia"
+        android:paddingTop="5dp"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:text="     "
+        android:textColor="#000000"
+        android:textSize="18dp"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/fpago"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/guion4"
+        android:layout_below="@+id/provincia"
+        android:text="F. PAGO: "
+        android:paddingLeft="10dp"
+        android:textColor="#000000"
+        android:textSize="16dp"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/forma_pago"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/fpago"
+        android:layout_below="@+id/provincia"
+        android:paddingLeft="10dp"
+        android:textColor="#000000"
+        android:textSize="16dp"
+        android:textStyle="bold"/>
+
+</RelativeLayout>

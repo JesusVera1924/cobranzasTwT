@@ -1,0 +1,42 @@
+apply plugin: 'com.android.application'
+
+android {
+      compileSdkVersion 26
+      useLibrary 'org.apache.http.legacy'
+
+      defaultConfig {
+            applicationId "com.twt.appcobranzas"
+            minSdkVersion 15
+            targetSdkVersion 26
+            versionCode 1
+            versionName "10.1.4"
+            multiDexEnabled true
+            testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+      }
+      buildTypes {
+            release {
+                  minifyEnabled false
+                  proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            }
+      }
+      dexOptions {
+            preDexLibraries true
+      }
+      compileOptions {
+            sourceCompatibility JavaVersion.VERSION_1_8
+            targetCompatibility JavaVersion.VERSION_1_8
+      }
+}
+
+dependencies {
+      implementation fileTree(include: ['*.jar'], dir: 'libs')
+      testImplementation 'junit:junit:4.12'
+      implementation 'com.android.support:appcompat-v7:26.1.0'
+      implementation 'com.android.support:design:26.1.0'
+      implementation 'com.squareup.picasso:picasso:2.5.2'
+      implementation 'commons-io:commons-io:+'
+      implementation 'com.itextpdf:itextg:5.5.10'
+      implementation files('libs/activation.jar')
+      implementation files('libs/additionnal.jar')
+      implementation files('libs/mail.jar')
+}

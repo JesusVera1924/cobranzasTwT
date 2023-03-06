@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:id="@+id/mCorreo"
+        android:title="Enviar correo"></item>
+    <item android:id="@+id/mDetalle"
+        android:title="Ver detalle del recibo"></item>
+    <item android:id="@+id/mEliminar"
+        android:title="Eliminar datos del recibo"></item>
+
+</menu>

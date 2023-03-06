@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <LinearLayout
+        android:id="@+id/lay2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/conRT"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="CON RT"
+            android:textColor="#FFFFFF"
+            android:layout_marginTop="10dp"
+            android:background="@color/colorCheck1"
+            android:layout_marginBottom="5dp" />
+
+        <Button
+            android:id="@+id/sinRT"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="SIN RT"
+            android:textColor="#FFFFFF"
+            android:layout_marginTop="10dp"
+            android:background="@color/colorAccent"
+            android:layout_marginLeft="20dp"
+            android:layout_marginBottom="5dp" />
+
+    </LinearLayout>
+
+</RelativeLayout>

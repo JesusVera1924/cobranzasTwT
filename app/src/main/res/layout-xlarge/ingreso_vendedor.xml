@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.design.widget.AppBarLayout android:layout_height="wrap_content"
+        android:layout_width="match_parent" android:theme="@style/AppTheme.AppBarOverlay"
+        android:id="@+id/appLayout">
+
+        <android.support.v7.widget.Toolbar android:id="@+id/toolbar2"
+            android:layout_width="match_parent" android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary" />
+
+    </android.support.design.widget.AppBarLayout>
+
+    <LinearLayout
+        android:id="@+id/layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="80dp"
+        android:layout_marginBottom="5dp">
+    <TextView
+        android:id="@+id/tvTitulo"
+        android:layout_width="wrap_content"
+        android:layout_height="70dp"
+        android:layout_weight="1.93"
+        android:gravity="center"
+        android:text="REGISTRO/ACTUALIZACION DE VENDEDORES"
+        android:textSize="35dp"
+        android:textStyle="bold"
+        android:textColor="#0a2f92"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@+id/layout"
+        android:layout_marginBottom="20dp">
+
+        <TextView
+            android:id="@+id/tvCod"
+            android:layout_width="wrap_content"
+            android:layout_height="70dp"
+            android:layout_weight="1.90"
+            android:gravity="center"
+            android:text="CODIGO:"
+            android:textSize="35dp"
+            android:textStyle="bold"
+            android:textColor="#000000"/>
+        <EditText
+            android:id="@+id/etCod"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Ingrese codigo"
+            android:textSize="35dp"
+            android:layout_weight="2"
+            android:textColor="#000000"
+            android:textStyle="italic"
+            android:maxLength="5"/>
+        <Button
+            android:id="@+id/btVerificar"
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/button"
+            android:layout_weight="0.50"
+            android:text="BUSCAR"
+            android:textSize="40dp"
+            android:textStyle="bold"
+            android:textColor="#ffffff" />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/layout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@+id/layout1">
+        <TextView
+            android:id="@+id/tvNombre"
+            android:layout_width="220dp"
+            android:layout_height="70dp"
+            android:gravity="center"
+            android:text="NOMBRES:"
+            android:textSize="35dp"
+            android:textStyle="bold"
+            android:textColor="#000000"/>
+        <EditText
+            android:id="@+id/etNombre"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Ingrese nombres"
+            android:textSize="35dp"
+            android:layout_weight="2"
+            android:textColor="#000000"
+            android:textStyle="italic"/>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/layout3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@+id/layout2">
+        <TextView
+            android:id="@+id/tvCorreo"
+            android:layout_width="220dp"
+            android:layout_height="70dp"
+            android:gravity="center"
+            android:text="EMAIL:"
+            android:textSize="35dp"
+            android:textStyle="bold"
+            android:textColor="#000000"/>
+        <EditText
+            android:id="@+id/etCorreo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Ingrese correo electronico"
+            android:textSize="35dp"
+            android:layout_weight="2"
+            android:textColor="#000000"
+            android:textStyle="italic"/>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/layout4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@+id/layout3">
+        <TextView
+            android:id="@+id/tvUrl"
+            android:layout_width="220dp"
+            android:layout_height="70dp"
+            android:gravity="center"
+            android:text="URL:"
+            android:textSize="35dp"
+            android:textStyle="bold"
+            android:textColor="#000000"/>
+        <EditText
+            android:id="@+id/etUrl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Ingrese la URL de conexion"
+            android:textSize="25dp"
+            android:layout_weight="2"
+            android:textColor="#000000"
+            android:textStyle="italic"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout7"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@+id/layout4">
+
+        <TextView
+            android:id="@+id/tvPin"
+            android:layout_width="220dp"
+            android:layout_height="70dp"
+            android:gravity="center"
+            android:text="PIN:"
+            android:textSize="35dp"
+            android:textStyle="bold"
+            android:textColor="#000000" />
+        <EditText
+            android:id="@+id/etPin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Ingrese pin"
+            android:textSize="35dp"
+            android:numeric="integer"
+            android:textStyle="italic"
+            android:layout_weight="2"
+            android:maxLength="4"
+            android:textColor="#000000"/>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/layout8"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/layout7">
+
+        <TextView
+            android:id="@+id/tvAdm"
+            android:layout_width="wrap_content"
+            android:layout_height="70dp"
+            android:gravity="center"
+            android:text="PASSWORD ADMINISTRADOR:"
+            android:textSize="30dp"
+            android:textStyle="bold"
+            android:textColor="#000000" />
+        <EditText
+            android:id="@+id/etAdm"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:textSize="30dp"
+            android:inputType="numberPassword"
+            android:numeric="integer"
+            android:textStyle="italic"
+            android:maxLength="4"
+            android:textColor="#000000"/>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/layout9"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:orientation="horizontal"
+        android:layout_below="@+id/layout8"
+        android:weightSum="1"
+        android:gravity="center">
+        <Button
+            android:id="@+id/btGuardar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button"
+            android:text="GUARDAR"
+            android:textSize="40dp"
+            android:textStyle="bold"
+            android:textColor="#ffffff"
+            android:layout_weight="0.15" />
+    </LinearLayout>
+
+</RelativeLayout>

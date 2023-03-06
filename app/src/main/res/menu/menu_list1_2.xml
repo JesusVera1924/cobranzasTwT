@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:id="@+id/mDetalle"
+        android:title="Ver detalle de la nota de credito"></item>
+    <item android:id="@+id/mEliminar"
+        android:title="Eliminar datos de NC aplicada"></item>
+
+</menu>
